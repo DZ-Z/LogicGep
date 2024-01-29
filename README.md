@@ -1,0 +1,2 @@
+# LogicGep
+Boolean network inference
