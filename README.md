@@ -16,8 +16,7 @@ requirements.txt
    For the input data, ensure that it is structured with rows representing different time points and columns 
    corresponding to various genes
    
-3. Command to run GENElink
+3. Command to run LogicGep
  
-       `` cd LogicGep ``
-   
-       `` python main.py``
+   ``cd LogicGep ``  
+   ``python main.py``
