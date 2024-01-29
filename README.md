@@ -11,3 +11,13 @@ requirements.txt
   
 ## Usage
 
+1. Preparing  for  time-series gene expression profiles
+   
+   For the input data, ensure that it is structured with rows representing different time points and columns 
+   corresponding to various genes
+   
+3. Command to run GENElink
+ 
+       `` cd LogicGep ``
+   
+       `` python main.py``
