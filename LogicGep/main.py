@@ -143,7 +143,7 @@ def mainn(target,Regulators_sets,data_Out,Input_data,binary_data,raw_dataIn,raw_
         f.write(f'{target} = {symplified_best}\n')
 
 if __name__ == "__main__":
-    raw_data = pd.read_csv("C:/Users/Administrator/Ecoli-1.tsv", sep="\t", decimal=",")
+    raw_data = pd.read_csv("./Data/rawdata.tsv", sep="\t", decimal=",")
     raw_data = raw_data.apply(pd.to_numeric) 
     raw_data= raw_data.dropna()
     print(raw_data)
