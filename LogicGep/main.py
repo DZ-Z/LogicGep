@@ -32,7 +32,7 @@ def mlp2(raw_dataIn,y,list1):
     y=y.ravel()
     X = np.array(raw_dataIn[list(set(list1))])
     # X = min_max_scaler.fit_transform(X) # if necessary
-    fit1 = MLPRegressor(hidden_layer_sizes=(100, 50), activation='relu', solver='adam', alpha=0.01, max_iter=200)
+    fit1 = MLPRegressor(hidden_layer_sizes=(50, 50), activation='relu', solver='adam', alpha=0.01, max_iter=200)
     fit1.fit(X, y)
     pred1_train = fit1.predict(X)
     mse_1 = mean_squared_error(pred1_train, y)
@@ -124,7 +124,7 @@ def mainn(target,Regulators_sets,data_Out,Input_data,binary_data,raw_dataIn,raw_
     stats.register("max", np.max)
 
     n_pop = 50
-    n_gen = 300
+    n_gen = 200
     elites=10
     pop = toolbox.population(n=n_pop)
     hof = HallOfFame(5)   # only record the best individual ever found in all generations
