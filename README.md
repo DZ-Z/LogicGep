@@ -1,6 +1,6 @@
 # [LogicGep: Boolean networks inference using symbolic regression from times-series transcriptomic profiling data](https://github.com/DZ-Z/LogicGep)
 
-![Screenshot](Figure/Framwork.jpg)
+![Screenshot](Figure/Framwork.tif)
 
 In this work, we proposed a new method for BN inference from time-series transcriptional profiles, called LogicGep,
 which reconstructs the network topology and identifies each gene’s Boolean update function with a low time
