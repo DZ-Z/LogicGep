@@ -1,4 +1,4 @@
-# [LogicGep: Boolean networks inference using symbolic regression from times-series transcriptomic profiling data](https://github.com/DZ-Z/LogicGep)
+# [LogicGep: Boolean networks inference using symbolic regression from time-series transcriptomic profiling data](https://github.com/DZ-Z/LogicGep)
 
 ![Screenshot](Figure/Framwork.jpg)
 
