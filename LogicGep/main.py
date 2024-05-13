@@ -69,23 +69,23 @@ def mainn(target,Regulators_sets,data_Out,Input_data,binary_data,raw_dataIn,raw_
     # compile utility: which translates an individual into an executable function (Lambda)
     toolbox.register('compile', gep.compile_, pset=pset)
 
+    # def evaluate(individual):
+        # """Evalute the fitness of an individual"""
+
+        # for gene in individual:
+            # input_variables=gene.kexpression
+        # list1= ['' + item.name + '' for item in input_variables]
+
+        # for item in list1[:]:
+            # if item == 'and_' or item == 'or_' or item == 'not_':
+                # list1.remove(item)
+        # n_regulators = len(set(list1))
+        # func= toolbox.compile(individual)
+        # n_correct=sum(func(*pIn) ==pOut for pIn, pOut in zip(Input_data, Out_data))
+        # chen=1
+        # return (n_correct, n_regulators,chen)
+
     def evaluate(individual):
-        """Evalute the fitness of an individual"""
-
-        for gene in individual:
-            input_variables=gene.kexpression
-        list1= ['' + item.name + '' for item in input_variables]
-
-        for item in list1[:]:
-            if item == 'and_' or item == 'or_' or item == 'not_':
-                list1.remove(item)
-        n_regulators = len(set(list1))
-        func= toolbox.compile(individual)
-        n_correct=sum(func(*pIn) ==pOut for pIn, pOut in zip(Input_data, Out_data))
-        chen=1
-        return (n_correct, n_regulators,chen)
-
-    def evaluate2(individual):
         """Evalute the fitness of an individual"""
 
         for gene in individual:
@@ -102,7 +102,7 @@ def mainn(target,Regulators_sets,data_Out,Input_data,binary_data,raw_dataIn,raw_
 
 
     toolbox.register('evaluate', evaluate)
-    toolbox.register('evaluate2', evaluate2)
+   
     toolbox.register('select', tools.selTournament)
     ## general mutations whose aliases start with 'mut'
     # We can specify the probability for an operator with the .pbs property
